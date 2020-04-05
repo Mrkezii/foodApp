@@ -110,7 +110,6 @@ import UIKit
         for (index, button) in ratingButtons.enumerated() {
             // If the index of a button is less than the rating, that button should be selected
             button.isSelected = index < rating
-            print(button.isSelected, count)
             count = count + 1
         }
     }

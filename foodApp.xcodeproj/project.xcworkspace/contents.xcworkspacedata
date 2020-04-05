@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:foodApp.xcodeproj">
+      location = "group:project.pbxproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "New Group">
+   </Group>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

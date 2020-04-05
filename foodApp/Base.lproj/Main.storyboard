@@ -15,11 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ijZ-AL-bRr">
-                                <rect key="frame" x="20" y="64" width="374" height="534.33333333333337"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ijZ-AL-bRr">
+                                <rect key="frame" x="20" y="63.999999999999972" width="374" height="496.33333333333326"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXi-FX-oRp">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="20.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXi-FX-oRp">
+                                        <rect key="frame" x="144" y="0.0" width="86.333333333333314" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -29,15 +29,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twb-ML-Pjc">
-                                        <rect key="frame" x="0.0" y="70.333333333333343" width="151" height="30"/>
-                                        <state key="normal" title="Set Default Text Label"/>
-                                        <connections>
-                                            <action selector="setDefaultTextLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZeG-G3-hzh"/>
-                                        </connections>
-                                    </button>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="420" placeholderIntrinsicHeight="420" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="P3n-nF-g01">
-                                        <rect key="frame" x="0.0" y="108.33333333333337" width="374" height="374"/>
+                                        <rect key="frame" x="0.0" y="70.333333333333371" width="374" height="374"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="P3n-nF-g01" secondAttribute="height" multiplier="1:1" id="8kf-Ux-gcw"/>
@@ -47,7 +40,7 @@
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SSg-dx-ZW1" customClass="RatingControl" customModule="foodApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="490.33333333333337" width="252" height="44"/>
+                                        <rect key="frame" x="61" y="452.33333333333337" width="252" height="44"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="starCount">
                                                 <integer key="value" value="5"/>
@@ -59,6 +52,8 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="P3n-nF-g01" firstAttribute="trailing" secondItem="ijZ-AL-bRr" secondAttribute="trailingMargin" id="2Ia-PE-3IA"/>
+                                    <constraint firstItem="P3n-nF-g01" firstAttribute="leading" secondItem="ijZ-AL-bRr" secondAttribute="leadingMargin" id="Kg1-ny-rM7"/>
                                     <constraint firstAttribute="trailing" secondItem="Jof-bt-ZLP" secondAttribute="trailing" id="tEf-tD-r9Z"/>
                                 </constraints>
                             </stackView>
